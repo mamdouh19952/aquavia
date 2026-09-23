@@ -1,0 +1,13 @@
+@import 'bootstrap/dist/css/bootstrap.rtl.min.css';
+@import './theme.css';
+
+/* Arabic typography overrides — no letter-spacing/uppercase on Arabic
+   script: both break letterform joining and have no visual meaning. */
+:root {
+    --font-display: 'El Messiri', 'Segoe UI', Tahoma, sans-serif;
+    --font-body: 'IBM Plex Sans Arabic', 'Segoe UI', Tahoma, sans-serif;
+    --font-utility: 'IBM Plex Sans Arabic', 'Segoe UI', Tahoma, sans-serif;
+    --eyebrow-transform: none;
+    --eyebrow-tracking: 0;
+    --heading-tracking: 0;
+}
