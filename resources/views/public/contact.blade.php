@@ -17,7 +17,7 @@
                     <ul class="list-unstyled fs-5 mb-4">
                         <li class="d-flex align-items-center gap-3 mb-3">
                             <i class="bi bi-telephone-fill" style="color: var(--brand-aqua-dark);" aria-hidden="true"></i>
-                            <a href="tel:{{ config('company.phone') }}" class="text-decoration-none">{{ config('company.phone') }}</a>
+                            <a href="tel:{{ config('company.phone') }}" class="text-decoration-none" dir="ltr">{{ config('company.phone') }}</a>
                         </li>
                         <li class="d-flex align-items-center gap-3 mb-3">
                             <i class="bi bi-envelope-fill" style="color: var(--brand-aqua-dark);" aria-hidden="true"></i>

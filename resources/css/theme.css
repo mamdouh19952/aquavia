@@ -54,9 +54,20 @@
 }
 
 /* ---------- Base ---------- */
+/* Bootstrap's .row gutter uses negative margins that bleed past any
+   wrapper (e.g. <section>) sitting between it and .container's own
+   padding; clip that bleed on both possible scroll roots instead of
+   letting it force a horizontal scrollbar on narrow viewports. */
+html {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 body {
     font-family: var(--font-body);
     color: var(--brand-ink);
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 h1, h2, h3,
@@ -443,9 +454,14 @@ main {
     margin: 0;
 }
 
+.footer-links li {
+    min-width: 0;
+}
+
 .footer-links a {
     color: rgba(255, 255, 255, .75);
     text-decoration: none;
+    overflow-wrap: anywhere;
 }
 
 .footer-links a:hover {

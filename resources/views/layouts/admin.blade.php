@@ -60,6 +60,9 @@
         }
 
         @media (max-width: 768px) {
+            .admin-wrapper {
+                flex-direction: column;
+            }
             .admin-sidebar {
                 width: 100%;
                 height: auto;
@@ -101,6 +104,12 @@
                         <a href="{{ route('admin.work.index') }}"
                            @class(['nav-link', 'active' => request()->routeIs('admin.work.*')])>
                             <i class="bi bi-images"></i> Our Work
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{{ route('home') }}" class="nav-link" target="_blank" rel="noopener">
+                            <i class="bi bi-box-arrow-up-right"></i> View Site
                         </a>
                     </li>
                 </ul>

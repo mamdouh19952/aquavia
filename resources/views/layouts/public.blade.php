@@ -102,7 +102,7 @@
                     <ul class="footer-links">
                         <li class="d-flex align-items-center gap-2">
                             <i class="bi bi-telephone-fill" aria-hidden="true"></i>
-                            <a href="tel:{{ config('company.phone') }}">{{ config('company.phone') }}</a>
+                            <a href="tel:{{ config('company.phone') }}" dir="ltr">{{ config('company.phone') }}</a>
                         </li>
                         <li class="d-flex align-items-center gap-2">
                             <i class="bi bi-envelope-fill" aria-hidden="true"></i>
